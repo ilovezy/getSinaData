@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center"></h2>
+
+        <div class="newslist">
+        <h3><span class="blue3B left" style="color:#3B63B2">数据查询</span></h3>
+        <div class="view_item">
+            <div style="height:144px; margin:5px auto; width:250px;" id="swfid">
+                <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="246" height="144" id="testflashforex30" align="middle">
+                    <param name="allowScriptAccess" value="always">
+
+                    <param name="movie" value="http://i0.sinaimg.cn/cj/waihui/testflashforex30.swf">
+                    <param name="quality" value="high">
+                    <param name="bgcolor" value="#ffffff">
+                    <embed src="http://i0.sinaimg.cn/cj/waihui/testflashforex30.swf" quality="high" bgcolor="#ffffff" width="246" height="144" name="testflashforex30" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+                </object>
+            </div>
+            <div>
+                <form style="position: relative; zoom:1; margin:0px auto; width:300px;" onsubmit="return submit_RLCX();" action="#" name="form_RLCX">
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX" style="width: 54px;">
+                        <option selected="selected" value="mg">美国</option><option value="dg">德国</option><option value="rs">瑞士</option><option value="rb">日本</option><option value="yg">英国</option><option value="oy">欧元区</option><option value="az">澳大利亚</option><option value="jnd">加拿大</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_mg" style="width: 195px;">
+                        <option value="ISM制造业指数" title="ISM制造业指数">ISM制造业指数</option><option value="ISM非制造业指数" title="ISM非制造业指数">ISM非制造业指数</option><option value="非农就业人数变化" title="非农就业人数变化">非农就业人数变化</option><option value="贸易帐" title="贸易帐">贸易帐</option><option value="失业率" title="失业率">失业率</option><option value="未决房屋销售月率" title="未决房屋销售月率">未决房屋销售月率</option><option value="生产者物价指数月率" title="生产者物价指数月率">生产者物价指数月率</option><option value="生产者物价指数年率" title="生产者物价指数年率">生产者物价指数年率</option><option value="核心生产者物价指数月率" title="核心生产者物价指数月率">核心生产者物价指数月率</option><option value="核心生产者物价指数年率" title="核心生产者物价指数年率">核心生产者物价指数年率</option><option value="核心零售销售月率" title="核心零售销售月率">核心零售销售月率</option><option value="零售销售月率" title="零售销售月率">零售销售月率</option><option value="消费者物价指数月率" title="消费者物价指数月率">消费者物价指数月率</option><option value="消费者物价指数年率" title="消费者物价指数年率">消费者物价指数年率</option><option value="核心消费者物价指数月率" title="核心消费者物价指数月率">核心消费者物价指数月率</option><option value="核心消费者物价指数年率" title="核心消费者物价指数年率">核心消费者物价指数年率</option><option value="新屋开工" title="新屋开工">新屋开工</option><option value="密歇根大学消费者信心指数初值" title="密歇根大学消费者信心指数初值">密歇根大学消费者信心指数初值</option><option value="成屋销售" title="成屋销售">成屋销售</option><option value="耐用品订单月率" title="耐用品订单月率">耐用品订单月率</option><option value="耐用品订单月率（除运输外）" title="耐用品订单月率（除运输外）">耐用品订单月率（除运输外）</option><option value="咨商会消费者信心指数" title="咨商会消费者信心指数">咨商会消费者信心指数</option><option value="GDP年率初值" title="GDP年率初值">GDP年率初值</option><option value="央行公布利率决议" title="央行公布利率决议">央行公布利率决议</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_dg" style="display: none;">
+                        <option value="Ifo商业景气指数" title="Ifo商业景气指数">Ifo商业景气指数</option><option value="消费者物价指数月率终值" title="消费者物价指数月率终值">消费者物价指数月率终值</option><option value="消费者物价指数年率终值" title="消费者物价指数年率终值">消费者物价指数年率终值</option><option value="贸易帐（季调後）" title="贸易帐（季调後）">贸易帐（季调後）</option><option value="GDP" title="GDP">GDP</option><option value="实际零售销售月率" title="实际零售销售月率">实际零售销售月率</option><option value="实际零售销售年率" title="实际零售销售年率">实际零售销售年率</option><option value="ZEW经济景气指数" title="ZEW经济景气指数">ZEW经济景气指数</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_rs" style="display: none;">
+                        <option value="SVME采购经理人指数" title="SVME采购经理人指数">SVME采购经理人指数</option><option value="贸易帐" title="贸易帐">贸易帐</option><option value="消费者物价指数月率" title="消费者物价指数月率">消费者物价指数月率</option><option value="消费者物价指数年率" title="消费者物价指数年率">消费者物价指数年率</option><option value="GDP季率" title="GDP季率">GDP季率</option><option value="GDP年率" title="GDP年率">GDP年率</option><option value="央行公布利率决议" title="央行公布利率决议">央行公布利率决议</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_rb" style="display: none;">
+                        <option value="贸易帐（财务省）" title="贸易帐（财务省）">贸易帐（财务省）</option><option value="央行公布利率决议" title="央行公布利率决议">央行公布利率决议</option><option value="全国消费者物价指数年率" title="全国消费者物价指数年率">全国消费者物价指数年率</option><option value="全国核心消费者物价指数年率" title="全国核心消费者物价指数年率">全国核心消费者物价指数年率</option><option value="失业率" title="失业率">失业率</option><option value="领先指标终值" title="领先指标终值">领先指标终值</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_yg" style="display: none;">
+                        <option value="Halifax房价指数月率" title="Halifax房价指数月率">Halifax房价指数月率</option><option value="Halifax房价指数年率" title="Halifax房价指数年率">Halifax房价指数年率</option><option value="贸易帐" title="贸易帐">贸易帐</option><option value="央行公布利率决议" title="央行公布利率决议">央行公布利率决议</option><option value="核心消费者物价指数年率" title="核心消费者物价指数年率">核心消费者物价指数年率</option><option value="核心消费者物价指数月率" title="核心消费者物价指数月率">核心消费者物价指数月率</option><option value="消费者物价指数年率" title="消费者物价指数年率">消费者物价指数年率</option><option value="消费者物价指数月率" title="消费者物价指数月率">消费者物价指数月率</option><option value="零售销售月率" title="零售销售月率">零售销售月率</option><option value="零售销售年率" title="零售销售年率">零售销售年率</option><option value="Rightmove房价指数年率" title="Rightmove房价指数年率">Rightmove房价指数年率</option><option value="Rightmove房价指数月率" title="Rightmove房价指数月率">Rightmove房价指数月率</option><option value="GDP季率初值" title="GDP季率初值">GDP季率初值</option><option value="GDP年率初值" title="GDP年率初值">GDP年率初值</option><option value="失业率" title="失业率">失业率</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_oy" style="display: none;">
+                        <option value="核心消费者物价指数月率终值" title="核心消费者物价指数月率终值">核心消费者物价指数月率终值</option><option value="核心消费者物价指数年率终值" title="核心消费者物价指数年率终值">核心消费者物价指数年率终值</option><option value="GDP年率终值" title="GDP年率终值">GDP年率终值</option><option value="消费者信心指数终值" title="消费者信心指数终值">消费者信心指数终值</option><option value="零售销售月率(%)" title="零售销售月率(%)">零售销售月率(%)</option><option value="零售销售年率(%)" title="零售销售年率(%)">零售销售年率(%)</option><option value="央行公布利率决议" title="央行公布利率决议">央行公布利率决议</option><option value="贸易帐（季调後）(亿欧元)" title="贸易帐（季调後）(亿欧元)">贸易帐（季调後）(亿欧元)</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_az" style="display: none;">
+                        <option value="零售销售月率" title="零售销售月率">零售销售月率</option><option value="贸易帐(亿澳元)" title="贸易帐(亿澳元)">贸易帐(亿澳元)</option><option value="失业率" title="失业率">失业率</option><option value="生产者物价指数季率" title="生产者物价指数季率">生产者物价指数季率</option><option value="消费者物价指数季率" title="消费者物价指数季率">消费者物价指数季率</option><option value="消费者物价指数年率" title="消费者物价指数年率">消费者物价指数年率</option><option value="央行公布利率决议" title="央行公布利率决议">央行公布利率决议</option>
+                    </select>
+                    <select onmousewheel="javascript:return false;" onchange="change_RLCX(this.form);" name="select_RLCX_jnd" style="display: none;">
+                        <option value="新屋开工" title="新屋开工">新屋开工</option><option value="失业率" title="失业率">失业率</option><option value="贸易帐(亿加元)" title="贸易帐(亿加元)">贸易帐(亿加元)</option><option value="零售销售月率(%)" title="零售销售月率(%)">零售销售月率(%)</option><option value="央行公布利率决议" title="央行公布利率决议">央行公布利率决议</option><option value="核心消费者物价指数年率" title="核心消费者物价指数年率">核心消费者物价指数年率</option><option value="核心消费者物价指数月率" title="核心消费者物价指数月率">核心消费者物价指数月率</option><option value="消费者物价指数年率" title="消费者物价指数年率">消费者物价指数年率</option><option value="消费者物价指数月率" title="消费者物价指数月率">消费者物价指数月率</option><option value="GDP月率(%)" title="GDP月率(%)">GDP月率(%)</option>
+                    </select>
+                </form>
+                <!-- u0VaXuZPxIK/ShUZ1rjgbFdxyqD5L6GZm2RvkK/jhTG7Hi6hPdP7hU27v2jP5yqAbM2k9VIlKja70HoVFAj5ztCstu5uwTIJp65/2p/f7vSlgNA55NZ+ZzsUWSArM57vK9UFXGWxqDc+X8ex4GoEJhhZ+UoHte6xzegi7Y0wVPzZXa0dE+EoxJ+2U3Zzsu/moptUHg== -->
+            </div>
+            <script>
+                var countryname = "美国";
+                var contentname = "ISM制造业采购经理人指数";
+                var countrycode = "mg";
+                var contentcode = "syl";
+                var totalparam = "";
+                var jsReady = false;
+                // -------  函数 -------
+                // 调用这些函数的目的是检查页面是否已初始化以及 JavaScript 是否可用
+                function isReady(){
+                    // alert(jsReady);
+                    jsReady = true;
+                    return jsReady;
+                }
+                function getFlashMovieObject(movieName){
+                    return document[movieName] || window[movieName];
+                }
+                function submit_RLCX(){
+                    try {
+                        var target_url = "http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country="+countryname+"&event="+contentname+"";
+                        totalparam=contentname+"|"+countryname+"|"+target_url;
+                        if(!getFlashMovieObject("testflashforex30").onMethod)
+                        {
+                            setTimeout(submit_RLCX, 1000);
+                        }
+
+                        getFlashMovieObject("testflashforex30").onMethod(totalparam);
+                        return false;
+                    }catch (e) {
+                        return false;
+                    }
+                }
+                function javascriptMethod(param){
+                    //alert(param);
+                    setTimeout(submit_RLCX,1000);
+                }
+                function change_RLCX(D){
+                    var __width0={"mg": 54, "oy": 66, "dg": 54, "rb": 54, "yg": 54, "rs": 54, "az": 78, "jnd": 66};
+                    var __width1={"mg": 195, "oy": 183, "dg": 195, "rb": 195, "yg": 195, "rs": 195, "az": 171, "jnd": 183};
+                    D.select_RLCX.style.width = __width0[D.select_RLCX.value] + "px";
+                    D["select_RLCX_" + D.select_RLCX.value].style.width = __width1[D.select_RLCX.value] + "px";
+                    var obj = D.select_RLCX.options[D.select_RLCX.selectedIndex];
+                    var strsel = obj.text;
+                    var strcode = obj.value;
+                    countrycode=strcode;
+                    subchangeRLCX(D["select_RLCX_"+strcode]);
+                    countryname=strsel;
+                    for (var i = 0; i < D.select_RLCX.options.length; i++) {
+                        var __stringCode = D.select_RLCX.options[i].value;
+                        D["select_RLCX_"+__stringCode].style.display = obj.value==__stringCode?"":"none";
+                    }
+                    submit_RLCX();
+                }
+                function subchangeRLCX(subD){
+                    var sub_obj = subD.options[subD.selectedIndex];
+                    var sub_strsel = sub_obj.text;
+                    var sub_strcode= sub_obj.value;
+                    contentcode=sub_strcode;
+                    contentname=sub_strsel;
+                }
+                // 由 <body> 标签的 onload 事件调用
+                function pageInit(){
+                    // 记录 JavaScript 已准备就绪
+                    jsReady = true;
+                }
+                document.forms["form_RLCX"].select_RLCX.value="mg";
+                change_RLCX(document.forms["form_RLCX"]);
+
+            </script>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script>
+
+
+
+    </script>
+</body>
+</html>

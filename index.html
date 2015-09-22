@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>抓取新浪股票图表</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+    <style type="text/css">
+    div.col-sm-12 {
+        margin-bottom: 50px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center">新浪股票图表</h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>来源 (可用)<a href="http://finance.sina.com.cn/realstock/company/sh000001/nc.shtml">http://finance.sina.com.cn/realstock/company/sh000001/nc.shtml</a></h2>
+                <object type="application/x-shockwave-flash" data="http://finance.sina.com.cn/flash/cn.swf?" width="400" height="400" id="flash">
+                    <param name="allowFullScreen" value="true">
+                    <param name="allowScriptAccess" value="always">
+                    <param name="wmode" value="transparent">
+                    <param name="flashvars" value="symbol=sh000002&amp;code=iddg64geja6fea4eafh9jbj7c5j4ie5d&amp;s=3">
+                </object>
+            </div>
+
+            <div class="col-sm-12">
+                <h2>恒生指数（可用） 来源  <a href="http://stock.finance.sina.com.cn/hkstock/quotes/HSI.html">http://stock.finance.sina.com.cn/hkstock/quotes/HSI.html</a></h2>
+                <object type="application/x-shockwave-flash" data="http://i3.sinaimg.cn/cj/yw/flash/hk150409b.swf?0.2921605887822807" width="660" height="470" id="hqFlash" style="visibility: visible;">
+                    <param name="allowFullScreen" value="true">
+                    <param name="allowScriptAccess" value="always">
+                    <param name="wmode" value="transparent">
+                    <param name="flashvars" value="symbol=hkHSI&amp;Asymbol=&amp;hq_str=HSI,恒生指数,21434.250,21404.961,21686.449,21091.459,21289.561,-115.400,-0.540,0.000,0.000,88043840.357,0,0.000,0.000,28588.520,20865.260,2015/08/26,15:01:44&amp;lastfive=50000&amp;status=1">
+                </object>
+            </div>
+            <div class="col-sm-12">
+                <h2>环球指数（可用）   来源 <a href="http://finance.sina.com.cn/?qq-pf-to=pcqq.c2c" target="_blank">http://finance.sina.com.cn/?qq-pf-to=pcqq.c2c</a></h2>
+                <object id="flashDiv1" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10" width="730" height="80" type="application/x-shockwave-flash" style="display: block;">
+                    <param name="movie" value="http://i2.sinaimg.cn/cj/hsuan/flash/indices/Indices140504q.swf">
+                    <param name="quality" value="best">
+                    <param name="bgcolor" value="#ffffff">
+                    <param name="wmode" value="opaque">
+                    <param name="allowfullscreen" value="false">
+                    <param name="allowscriptaccess" value="always">
+                    <embed id="flashDiv1" width="730" height="80" src="http://i2.sinaimg.cn/cj/hsuan/flash/indices/Indices140504q.swf" quality="best" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" bgcolor="#ffffff" wmode="opaque" allowfullscreen="false" allowscriptaccess="always">
+                </object>
+            </div>
+
+            <div class="col-sm-12">
+                <h2>黄金 原油 （可用）  来源 <a href="http://finance.sina.com.cn/?qq-pf-to=pcqq.c2c" target="_blank">http://finance.sina.com.cn/?qq-pf-to=pcqq.c2c</a></h2>
+                <object id="flashDiv2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10" width="730" height="80" type="application/x-shockwave-flash" style="display: block;">
+                    <param name="movie" value="http://i3.sinaimg.cn/cj/yw/flash/GC130522a.swf">
+                    <param name="quality" value="best">
+                    <param name="bgcolor" value="#ffffff">
+                    <param name="wmode" value="opaque">
+                    <param name="allowfullscreen" value="false">
+                    <param name="allowscriptaccess" value="always">
+                    <embed id="flashDiv2" width="730" height="80" src="http://i3.sinaimg.cn/cj/yw/flash/GC130522a.swf" quality="best" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" bgcolor="#ffffff" wmode="opaque" allowfullscreen="false" allowscriptaccess="always">
+                </object>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <h2>合约分析（这个看上去很强大，暂时取不下来） <a href="http://stock.finance.sina.com.cn/option/quotes.html" target="_blank">http://stock.finance.sina.com.cn/option/quotes.html</a></h2>
+        </div>
+
+        <div class="col-sm-12">
+            <h2>资金流向（可用）  测试版<a href="http://vip.stock.finance.sina.com.cn/moneyflow/#blocktol_sina" target="_blank">http://vip.stock.finance.sina.com.cn/moneyflow/#blocktol_sina</a></h2>
+
+            <div id="S_HQ_CONTAINER_xk0vz">
+                <div class="head">
+                    <h3 style="width: 96px;">板块行业</h3>
+                    <div class="tab_wrap" style="left: 96px;">
+                        <ul>
+                            <li class="active" style="width: 91px;"><a href="javascript:void(0);">新浪行业</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="S_HQ_CONTAINER_f1ljj">
+                    <div id="S_HQ_CONTAINER_j4osa">
+                        <div id="S_HQ_CONTAINER_in3od">
+                            <embed type="application/x-shockwave-flash" src="http://www.sinaimg.cn/dy/fusioncharts/v3/flash/ScrollColumn2D.swf" width="810" height="340" id="ChartId" name="ChartId" quality="high" allowscriptaccess="always" flashvars="debugMode=0&amp;chartWidth=810&amp;chartHeight=340&amp;DOMId=ChartId&amp;registerWithJS=0&amp;scaleMode=noScale&amp;lang=EN&amp;dataURL=http://money.finance.sina.com.cn/quotes_service/view/xml_money_flow_fc_hy.php%3Ffenlei%3D0">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <h1 class="text-center">以下是图片</h1>
+            <div class="col-sm-12">
+                <h2>来源
+                    <a href="http://finance.sina.com.cn/?qq-pf-to=pcqq.c2c">http://finance.sina.com.cn/?qq-pf-to=pcqq.c2c</a>
+                </h2>
+                <img src="img/img-2.jpg">
+            </div>
+            <div class="col-sm-12">
+                <h2>来源
+                    <a href="http://finance.sina.com.cn/stock/hkstock/">http://finance.sina.com.cn/stock/hkstock/</a>
+                </h2>
+
+                <div class="col-sm-6">
+                    <img src="img/img-3.jpg">
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/img-4.jpg">
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <h2>来源
+                    <a href="http://finance.sina.com.cn/money/index.shtml">http://finance.sina.com.cn/money/index.shtml</a>
+                </h2>
+                <img src="img/img-6.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>新浪财经-外汇
+                    <a href="http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD">http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD</a>
+                </h2>
+                <img src="img/img-7.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>新浪财经-期货
+                    <a href="http://finance.sina.com.cn/futuremarket/">http://finance.sina.com.cn/futuremarket/</a>
+                </h2>
+                <img src="img/img-8.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>新浪财经-期货-商品咨询
+                    <a href="http://finance.sina.com.cn/futuremarket/">http://finance.sina.com.cn/futuremarket/</a>
+                </h2>
+                <img src="img/img-9.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>新浪财经-期货-金融期货
+                    <a href="http://finance.sina.com.cn/futuremarket/">http://finance.sina.com.cn/futuremarket/</a>
+                </h2>
+                <img src="img/img-10.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>新浪财经-期货-持仓分析
+                    <a href="http://vip.stock.finance.sina.com.cn/q/view/vFutures_Positions_cjcc.php">http://vip.stock.finance.sina.com.cn/q/view/vFutures_Positions_cjcc.php</a>
+                </h2>
+                <img src="img/img-11.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>环球股指汇总 (新浪上的是 img)
+                    <a href="http://finance.sina.com.cn/money/globalindex/">http://finance.sina.com.cn/money/globalindex/</a>
+                </h2>
+                <img src="img/img-12.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>金银比价 (新浪上是 img)
+                    <a href="http://finance.sina.com.cn/nmetal/">http://finance.sina.com.cn/nmetal/</a>
+                </h2>
+                <img src="img/img-13.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>黄金ETF
+                    <a href="http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php">http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php</a>
+                </h2>
+
+                <img src="img/img-14.png">
+            </div>
+
+            <div class="col-sm-12">
+                <h2>新浪财经-债券
+                    <a href="http://finance.sina.com.cn/bond/">http://finance.sina.com.cn/bond/</a>
+                </h2>
+                <img src="img/img-15.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

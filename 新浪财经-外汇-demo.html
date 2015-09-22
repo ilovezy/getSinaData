@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">http://finance.sina.com.cn/forex/</h2>
+<div class="Left">
+        <div class="TitleA">
+            <div class="Back"><img src="http://i3.sinaimg.cn/cj/news/2008/0818/images/transparent.gif" class="LTA">全球外汇行情</div>
+        </div>
+        <div class="ContentA">
+        <div class="Search" id="s1000" style="display:none">
+                <select name="selectHSZS" id="selectHSZS" onchange="return window['submitHSZS']();" style="width:110px;">
+
+            <option value="DINIW">美元指数</option><option value="USDCNY">美元人民币</option><option value="AUDUSD">澳元美元</option><option value="EURUSD">欧元美元</option><option value="GBPUSD">英镑美元</option><option value="NZDUSD">新西兰元美元</option><option value="USDCAD">美元加元</option><option value="USDCHF">美元瑞郎</option><option value="USDHKD">美元港元</option><option value="USDJPY">美元日元</option><option value="USDMYR">美元马币</option><option value="USDSGD">美元新加坡元</option><option value="USDTWD">美元台币</option><option value="AUDCAD">澳元加元</option><option value="AUDCHF">澳元瑞郎</option><option value="AUDCNY">澳元人民币</option><option value="AUDEU">澳元欧元</option><option value="AUDEUR">澳元欧元</option><option value="AUDGBP">澳元英镑</option><option value="AUDHKD">澳元港元</option><option value="AUDJPY">澳元日元</option><option value="AUDNZD">澳元新西兰元</option><option value="CADAUD">加元澳元</option><option value="CADCHF">加元瑞郎</option><option value="CADCNY">加元人民币</option><option value="CADEUR">加元欧元</option><option value="CADGBP">加元英镑</option><option value="CADHKD">加元港元</option><option value="CADJPY">加元日元</option><option value="CADNZD">加元新西兰元</option><option value="CHFAUD">瑞郎澳元</option><option value="CHFCAD">瑞郎加元</option><option value="CHFCNY">瑞郎人民币</option><option value="CHFEUR">瑞郎欧元</option><option value="CHFGBP">瑞郎英镑</option><option value="CHFHKD">瑞郎港元</option><option value="CHFJPY">瑞郎日元</option><option value="CNYJPY">人民币日元</option><option value="DINIW2">倚天美指</option><option value="EURAUD">欧元澳元</option><option value="EURCAD">欧元加元</option><option value="EURCHF">欧元瑞郎</option><option value="EURCNY">欧元人民币</option><option value="EURGBP">欧元英镑</option><option value="EURHKD">欧元港元</option><option value="EURJPY">欧元日元</option><option value="EURNZD">欧元新西兰元</option><option value="GBPAUD">英镑澳元</option><option value="GBPCAD">英镑加元</option><option value="GBPCHF">英镑瑞郎</option><option value="GBPCNY">英镑人民币</option><option value="GBPEUR">英镑欧元</option><option value="GBPHKD">英镑港元</option><option value="GBPJPY">英镑日元</option><option value="GBPNZD">英镑新西兰元</option><option value="HKDAUD">港元澳元</option><option value="HKDCAD">港元加元</option><option value="HKDCHF">港元瑞郎</option><option value="HKDCNY">港元人民币</option><option value="HKDEUR">港元欧元</option><option value="HKDGBP">港元英镑</option><option value="HKDJPY">港元日元</option><option value="NZDCNY">新西兰元人民币</option><option value="SGDCNY">新加坡元人民币</option><option value="TWDCNY">台币人民币</option></select>
+            点击下图查看具体分时图
+        </div>
+
+        <!-- 搜索 begin xuehua part3 start-->
+            <div class="hl_search">
+                <h3>搜索：</h3><input type="text" id="suggest_top" name="q" autocomplete="off" class="txt" onfocus="this.style.color='#333';" onblur="if(this.value == '')this.style.color='';"><input type="button" class="btn" value="" id="submit_search">
+                <input type="hidden" id="s_HSZS_v">
+            </div>
+            <script type="text/javascript">
+                new SuggestServer('suggest_top', {
+                            'submit': 'submit_search'
+                        }, function (v, b) {
+                            document.getElementById('suggest_top').value = b[4];
+                            document.getElementById('s_HSZS_v').value = b[2].toLowerCase() || b[3].toLowerCase();
+                            window.open('http://finance.sina.com.cn/money/forex/hq/'+b[2].toUpperCase()+'.shtml');
+                            return window['submitHSZS']();
+                        }
+                );
+            </script>
+            <!-- 搜索 begin xuehua part3 end-->
+
+            <div class="Chf"><a href="http://finance.sina.com.cn/money/forex/hq/DINIW.shtml" id="linkHSZS" target="_blank"><img src="http://image.sinajs.cn/newchart/v5/forex/min_m/DINIW.gif?1440984669406" id="imageHSZS" border="0" alt=""></a></div>
+            <div class="ListA" id="divHSZS">
+                <ul class="udv-clearfix">
+                    <li class="B1">最新价</li>
+
+                    <li class="B1">95.8907</li>
+                    <li class="B1">涨跌幅</li>
+                    <li class="B1"><span style="color:#008000;">-0.2767%</span></li>
+                </ul>
+                <ul class="udv-clearfix">
+                    <li class="B2">昨收</li>
+                    <li class="B2">96.1568</li>
+
+                    <li class="B2">今开</li>
+                    <li class="B2">96.1520</li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">fillHSZS();</script>
+        <script type="text/javascript">
+            seajs.use(['jquery'],function($){
+                var api='http://stock.finance.sina.com.cn/forex/api/openapi.php/ForexService.getBankForexList';
+                var store={};
+                var $form=$("#simple-cal");
+                var form=$form[0];
+
+                function calculate(){
+                    var fV=form['inputWHJUQ_from'].value;
+                    var rate=(store.from.mid_price/store.to.mid_price).toFixed(4);
+                    var to=form['inputWHJUQ_to'];
+                    to.value=fV*rate;
+                    $("#currentRate").html('当前汇率：'+store.from.name+'兑'+store.to.name+' '+rate);
+                }
+
+                function getRate(currentType, type, callback){
+                    $.ajax({
+                        url: api,
+                        data:{
+                            from: currentType
+                        },
+                        dataType:'jsonp',
+                        cache:false
+                    }).done(function(data){
+                                var result=data.result,
+                                    status=result.status,
+                                    resultData=result.data;
+                                if(status.code==0){
+                                    store[type]=resultData[3];
+                                    _.isFunction(callback)&&callback();
+                                }
+                            });
+                }
+
+                $form.on('submit',function(e){
+                    var doCalculate= _.after(2, calculate);
+                    var from=form["selectWHJUQ_from"].value;
+                    var to=form["selectWHJUQ_to"].value;
+                    getRate(from, 'from', doCalculate);
+                    getRate(to, 'to', doCalculate);
+                    e.preventDefault();
+                });
+            });
+        </script>
+                <!--  复制计算器 开始 -->
+            <div class="cal-title udv-clearfix">
+                <a class="cal-title-left" href="http://finance.sina.com.cn/forex/jsq.html" target="_blank">外汇计算器</a>
+                <span class="cal-title-right" id="currentRate"></span>
+            </div>
+            <!--<script type="text/javascript" src="http://hq.sinajs.cn/list=USDJPY,USDCHF,GBPUSD,EURUSD,USDHKD,AUDUSD,USDCAD,USDCNY,USDSGD,USDMOP,NZDUSD"></script>-->
+                <form action="#" id="simple-cal">
+                    <div class="udv-clearfix">
+                        <ul class="Calculator">
+                            <li class="CT"><input type="text" class="CText" name="inputWHJUQ_from">&nbsp;</li>
+                            <li class="CS">
+                                <select name="selectWHJUQ_from">
+                                    <option value="USD" selected="selected">美元</option>
+                                    <option value="CNY">人民币</option>
+                                    <option value="GBP">英镑</option>
+                                    <option value="EUR">欧元</option>
+                                    <option value="HKD">港币</option>
+                                    <option value="MOP">澳门元</option>
+                                    <option value="JPY">日元</option>
+                                    <option value="CAD">加拿大元</option>
+                                    <option value="AUD">澳大利亚元</option>
+                                    <option value="SGD">新加坡元</option>
+                                    <option value="KRW">韩元</option>
+                                    <option value="PHP">菲律宾比索</option>
+                                    <option value="THB">泰国铢</option>
+                                    <option value="CHF">瑞士法郎</option>
+                                    <option value="NZD">新西兰元</option>
+                                    <option value="DKK">丹麦克朗</option>
+                                    <option value="NOK">挪威克朗</option>
+                                    <option value="SEK">瑞典克朗</option>
+                                    <option value="RUB">卢布</option>
+                                    <option value="MYR">林吉特</option>
+                                    <option value="ZAR">南非兰特</option>
+                                </select>
+                                =
+                            </li>
+
+                        </ul>
+                        <ul class="Calculator udv-clearfix">
+                            <li class="CT"><input type="text" class="CText" name="inputWHJUQ_to" readonly="readonly">
+                            </li>
+                            <li class="CS">
+                                <select name="selectWHJUQ_to">
+                                    <option value="USD">美元</option>
+                                    <option value="CNY" selected="selected">人民币</option>
+                                    <option value="GBP">英镑</option>
+                                    <option value="EUR">欧元</option>
+                                    <option value="HKD">港币</option>
+                                    <option value="MOP">澳门元</option>
+                                    <option value="JPY">日元</option>
+                                    <option value="CAD">加拿大元</option>
+                                    <option value="AUD">澳大利亚元</option>
+                                    <option value="SGD">新加坡元</option>
+                                    <option value="KRW">韩元</option>
+                                    <option value="PHP">菲律宾比索</option>
+                                    <option value="THB">泰国铢</option>
+                                    <option value="CHF">瑞士法郎</option>
+                                    <option value="NZD">新西兰元</option>
+                                    <option value="DKK">丹麦克朗</option>
+                                    <option value="NOK">挪威克朗</option>
+                                    <option value="SEK">瑞典克朗</option>
+                                    <option value="RUB">卢布</option>
+                                    <option value="MYR">林吉特</option>
+                                    <option value="ZAR">南非兰特</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul style="margin:10px 7px auto;" class="udv-clearfix">
+                        <li style="float: right;margin-left: 10px;"><input type="button" value="更多选择" id="calculator-layer-show"></li>
+                        <li style="float: right;"><input type="submit" value="计 算"></li>
+                    </ul>
+                </form>
+        <!--  复制计算器 结束 -->
+
+    </div>
+
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script>
+
+
+
+    </script>
+</body>
+</html>
